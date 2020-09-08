@@ -1,0 +1,55 @@
+body {
+    overflow: hidden;
+    -webkit-user-select: none;
+    cursor: cell;
+    background-image: url(img.jpg);
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.cuadro {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: tomato;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border-radius: 1em;
+}
+
+#puntaje {
+    text-align: right;
+}
+
+#total {
+    text-align: left;
+}
+
+#contenedor {
+    background-color: transparent;
+}
+
+#start:hover {
+    color: springgreen;
+}
+
+.msg {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: lavenderblush;
+    display: none;
+    font-size: 60px;
+}
